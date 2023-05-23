@@ -4,6 +4,9 @@ public class HelloResponse {
 
     private String message;
 
+    public HelloResponse() {
+    }
+
     public HelloResponse(String name) {
         this.message = "Hello ... " + name;
     }
