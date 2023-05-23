@@ -15,7 +15,7 @@ class HelloControllerTest {
     @Test
     void sayHi() {
         HelloResponse body = testRestTemplate.getForObject("/hello/demo", HelloResponse.class);
-        assertEquals("Hello ... demo", body.getMessage());
+        assertEquals("Hello demo", body.getMessage());
     }
 
 }
