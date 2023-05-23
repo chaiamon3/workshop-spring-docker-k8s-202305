@@ -8,7 +8,7 @@ echo "Service starting ..."
 status="starting"
 while [  "$status" != "healthy" ]
 do
-    status=$(docker container inspect --format {{.State.Health.Status}} workshop-spring-docker-k8s-202305-service1-1)
+    status=$(docker container inspect --format {{.State.Health.Status}} demo-service1-1)
     echo "Service status = $status"
     sleep 5
 done
