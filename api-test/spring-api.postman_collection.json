@@ -1,10 +1,10 @@
 {
+	"variables": [],
 	"info": {
-		"_postman_id": "08eef4f5-435d-4b32-a990-f7272bf625ce",
 		"name": "spring-api",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "1453931",
-		"_collection_link": "https://red-firefly-245852.postman.co/workspace/day2~ec0d6ed6-713c-474c-888d-74f09fc94cba/collection/1453931-08eef4f5-435d-4b32-a990-f7272bf625ce?action=share&creator=1453931&source=collection_link"
+		"_postman_id": "60cb3241-2301-374a-4abb-02cb7d7beb86",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
@@ -13,6 +13,7 @@
 				{
 					"listen": "test",
 					"script": {
+						"type": "text/javascript",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -20,28 +21,18 @@
 							"",
 							"pm.test(\"Check hello message\", function () {",
 							"    var jsonData = pm.response.json();",
-							"    pm.expect('Hello somkiat').to.eql(jsonData.message);",
+							"    pm.expect('Hello demo').to.eql(jsonData.message);",
 							"});"
-						],
-						"type": "text/javascript"
+						]
 					}
 				}
 			],
 			"request": {
+				"url": "http://localhost:8888/hello/demo",
 				"method": "GET",
 				"header": [],
-				"url": {
-					"raw": "http://localhost:8888/hello/somkiat",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8888",
-					"path": [
-						"hello",
-						"somkiat"
-					]
-				}
+				"body": {},
+				"description": ""
 			},
 			"response": []
 		}
