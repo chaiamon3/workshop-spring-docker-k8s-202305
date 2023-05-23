@@ -1,6 +1,6 @@
 # Workshop :: Develop Microservices with Spring Boot
 * Docker
-* Kubernetes
+* Kubernetes + Minikube
 
 ## Working with Docker compose
 1. Create file `docker-compose.yml`
