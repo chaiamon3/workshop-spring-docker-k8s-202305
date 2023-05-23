@@ -1,7 +1,6 @@
 version: "3"
 services:
   service1:
-    image: somkiat/demo:4.0
+    image: chaiamon3/demo:4.0
     ports:
       - "8888:8080"
-
