@@ -1,10 +1,9 @@
 {
-	"variables": [],
 	"info": {
+		"_postman_id": "abd45856-cf0a-4222-b937-1a7e812de09a",
 		"name": "spring-api",
-		"_postman_id": "60cb3241-2301-374a-4abb-02cb7d7beb86",
-		"description": "",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27584405"
 	},
 	"item": [
 		{
@@ -13,7 +12,6 @@
 				{
 					"listen": "test",
 					"script": {
-						"type": "text/javascript",
 						"exec": [
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -23,16 +21,29 @@
 							"    var jsonData = pm.response.json();",
 							"    pm.expect('Hello demo').to.eql(jsonData.message);",
 							"});"
-						]
+						],
+						"type": "text/javascript"
 					}
 				}
 			],
 			"request": {
-				"url": "http://localhost:8888/hello/demo",
 				"method": "GET",
 				"header": [],
-				"body": {},
-				"description": ""
+				"url": {
+					"raw": "http://127.0.0.1:8888/hello/demo",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8888",
+					"path": [
+						"hello",
+						"demo"
+					]
+				}
 			},
 			"response": []
 		}
