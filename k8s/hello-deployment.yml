@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: springboot-container
-        image: somkiat/demo:2.0
+        image: chaiamon3/demo:4.0
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
