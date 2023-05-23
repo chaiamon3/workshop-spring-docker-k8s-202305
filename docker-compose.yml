@@ -4,7 +4,6 @@ services:
     build:
       context: ./hello
       dockerfile: Dockerfile_multi_stage
-    image: somkiat/demo:4.0
+    image: chaiamon3/demo:4.0
     ports:
       - "8888:8080"
-
